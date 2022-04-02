@@ -12,7 +12,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat-websocket/*")
-                .setAllowedOrigins("http://localhost:4200")
+                .setAllowedOrigins("https://chartskt.herokuapp.com/")
                 .withSockJS();
         //ruta servidor en springboot, permisos de acceso para angulat y permitir uso del framework de sockets
     }
